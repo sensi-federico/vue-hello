@@ -13,17 +13,20 @@ createApp({
         return{
             title: 'Hello World!',
             titleColor: 'color',
-            button: 'btn btn-danger'
+            button: 'btn btn-danger',
+            image: './assets/img/anonymous.jpeg'
         }
     },
     methods: {
         changer(){
-            if(this.titleColor == 'color' && this.button == 'btn btn-danger'){
+            if(this.titleColor == 'color' && this.button == 'btn btn-danger' && this.image == './assets/img/anonymous.jpeg'){
                 this.titleColor = 'colorChanged'
                 this.button = 'btn btn-primary'
+                this.image = './assets/img/fsociety.jpeg'
             } else {
                 this.titleColor = 'color'
                 this.button = 'btn btn-danger'
+                this.image = './assets/img/anonymous.jpeg'
             }
         }
     }

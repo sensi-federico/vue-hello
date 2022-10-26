@@ -19,8 +19,9 @@
 <body>
     <div class="container">
         <div id="app" class="d-flex flex-column justify-content-center align-items-center vh-100">
-            <h1 v-bind:class="titleColor" class="p-5"> {{ title }} </h1>
-            <button v-bind:class="button" @click="changer">Click me</button>
+            <h1 v-bind:class="titleColor" class="p-3"> {{ title }} </h1>
+            <img class="img-fluid h-50" v-bind:src="image" alt="">
+            <button class="m-3 p-2" v-bind:class="button" @click="changer">Click me</button>
         </div>
     </div>
 
