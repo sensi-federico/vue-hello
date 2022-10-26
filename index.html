@@ -17,8 +17,14 @@
 </head>
 
 <body>
-    
+    <div class="container">
+        <div id="app" class="d-flex flex-column justify-content-center align-items-center vh-100">
+            <h1 v-bind:class="titleColor" class="p-5"> {{ title }} </h1>
+            <button v-bind:class="button" @click="changer">Click me</button>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
